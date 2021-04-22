@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1rem;
-    background-color: #16170f;
+    color: #16170f;
 }
 
 /*--------------------NavBar--------------------*/
@@ -46,7 +46,7 @@ nav.nav-bar ul li a{
 }
 
 nav.nav-bar ul li a:hover:not(.logo) {
-    background-color: #633f41;
+    background-color: #5c2a2c;
 }
 
 nav.nav-bar ul li.right {
@@ -55,20 +55,96 @@ nav.nav-bar ul li.right {
 
 /*--------------------Content main--------------------*/
 section.content-main {
-    min-height: 600px;
-    background-image: url("../images/coffee1.jpg");
+    position: relative;
+    min-height: 60vh;
+    width: 97.5%;
+    background-image: url("../images/coffee2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     background-position: center;
-    opacity: 0.4;
+    overflow-x: hidden;
+    padding: 25px;
+    opacity: 0.9;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.left-bottom {
+    background-color: #16170f;
+    color: white;
+    display: block;
+    width: 330px;
+    position: absolute;
+    bottom: 0;
+}
+
+.rigth-bottom {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
 }
 
 section div.logo-main {
-    text-align: center;
-    max-width: 75%;
-    height: 100%;
-    background-color: white;
-    margin: auto;
+    text-align: left;
+    font-size: 3rem;
+    color: #351715;
 }
 
+
+/*Sobre*/
+.margin{
+    margin: auto;
+    width: 60%;
+    background-color: rgb(248, 248, 248);
+}
+
+.text-about-container {
+    padding: 60px 40px;
+    text-align: left;
+}
+
+.tittle-about {
+    background-color: #16170f;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+    width: 30%;
+    margin: 0px auto 80px auto;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.text-about {
+    margin-bottom: 20px;
+}
+
+article article.quote {
+    padding: 25px;
+    background-color: rgb(240, 240, 240);
+    border-left: 6px solid rgb(206, 204, 204);
+}
+
+article article.quote .margin-bottom {
+    margin-bottom: 25px;
+}
+
+.sams-cafe {
+    margin: auto;
+    width: 90%;
+}
+
+.sams-cafe-img {
+    max-width: 100%;
+    opacity: 0.9;
+}
+
+.adress-time p{
+    margin-top: 20px; 
+}
