@@ -1,0 +1,74 @@
+/*
+    Paleta de cores
+
+    #351715
+    #633f41
+    #b5b4b9
+    #263d1f
+    #16170f
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    background-color: #16170f;
+}
+
+/*--------------------NavBar--------------------*/
+header {
+    position: sticky;
+    top: 0px;
+    background: #351715;
+}
+
+nav.nav-bar ul{
+    list-style-type: none;
+    
+    overflow: hidden;
+}
+
+nav.nav-bar ul li{
+    float: left;
+}
+
+nav.nav-bar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+nav.nav-bar ul li a:hover:not(.logo) {
+    background-color: #633f41;
+}
+
+nav.nav-bar ul li.right {
+    float: right;
+}
+
+/*--------------------Content main--------------------*/
+section.content-main {
+    min-height: 600px;
+    background-image: url("../images/coffee1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    opacity: 0.4;
+}
+
+section div.logo-main {
+    text-align: center;
+    max-width: 75%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+}
+
