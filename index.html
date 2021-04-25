@@ -14,9 +14,9 @@
     <header>
         <nav class="nav-bar">
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li class="right"><a href="#" class="logo">Sam's Cafe</a></li>
             </ul>
         </nav>
@@ -39,7 +39,7 @@
 
         <section class="margin">
             <article class="about">
-                <article class="text-about-container">
+                <article class="text-about-container" id="about">
                     <h3 class="sub-tittle">Sobre o Sam's</h3>
                     <p class="text-about">O Cafe foi fundado em São Paulo por Samuel L. Stark em 2023, o motivo? A forte
                         influência de Alisha, que com suas idéias
@@ -79,19 +79,19 @@
             </span>
         </section>
 
-        <section class="margin">
-            <article class="text-about-container">
+        <section class="margin container-menu">
+            <article class="text-about-container" id="menu">
                 <h3 class="sub-tittle">
                     Menu
                 </h3>
                 <article class="format">
                     <div class="menu">
-                        <h5 class="menu-tittle">Liv's</h5><span class="preco"> R$40,00</span>
+                        <h5 class="menu-tittle">Liv's Coffe 60ml</h5><span class="preco"> R$19,90</span>
                         <p class="text-menu">Café cultivado em nossas próprias fazendas, aroma encorpado, canela,
                             Vanilla, e outros condimentos especiais.</p>
-                        <h5 class="menu-tittle">Café Blending</h5><span class="preco"> R$30,00</span>
+                        <h5 class="menu-tittle">Cappuccino Blending 60ml</h5><span class="preco"> R$12,00</span>
                         <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <h5 class="menu-tittle">Le Caferiê</h5><span class="preco"> R$20,00</span>
+                        <h5 class="menu-tittle">Le Caferiê 60ml</h5><span class="preco"> R$10,99</span>
                         <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="products-img">
@@ -100,12 +100,11 @@
                 </article>
                 <article class="format">
                     <div class="menu-inv">
-                        <h5 class="menu-tittle">Liv's</h5><span class="preco"> R$40,00</span>
-                        <p class="text-menu">Café cultivado em nossas próprias fazendas, aroma encorpado, canela,
-                            Vanilla, e outros condimentos especiais.</p>
-                        <h5 class="menu-tittle">Café Blending</h5><span class="preco"> R$30,00</span>
+                        <h5 class="menu-tittle">Chocolate Quente 125ml</h5><span class="preco"> R$15,00</span>
+                        <p class="text-menu">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <h5 class="menu-tittle">Brownie.</h5><span class="preco"> R$22,99</span>
                         <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <h5 class="menu-tittle">Le Caferiê</h5><span class="preco"> R$20,00</span>
+                        <h5 class="menu-tittle">Le Caterine</h5><span class="preco"> R$26,00</span>
                         <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="products-img-inv">
@@ -114,12 +113,11 @@
                 </article>
                 <article class="format">
                     <div class="menu">
-                        <h5 class="menu-tittle">Liv's</h5><span class="preco"> R$40,00</span>
-                        <p class="text-menu">Café cultivado em nossas próprias fazendas, aroma encorpado, canela,
-                            Vanilla, e outros condimentos especiais.</p>
-                        <h5 class="menu-tittle">Café Blending</h5><span class="preco"> R$30,00</span>
+                        <h5 class="menu-tittle">Churros Mexicanos</h5><span class="preco"> R$10,99</span>
                         <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <h5 class="menu-tittle">Le Caferiê</h5><span class="preco"> R$20,00</span>
+                        <h5 class="menu-tittle">Cheesecake</h5><span class="preco"> R$15,00</span>
+                        <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h5 class="menu-tittle">Cannoli</h5><span class="preco"> R$10,00</span>
                         <p class="text-menu">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="products-img">
@@ -129,10 +127,55 @@
             </article>
         </section>
 
+        <section class="margin">
+            <article class="text-about-container" id="contact">
+                <h3 class="sub-tittle">
+                    FALE CONOSCO
+                </h3>
+                <span class="msg-contact">
+                    <p>Venha tomar uma xícara de café com a gente. 😉</p>
+                    <P>Se preferir reserve uma mesa e um horário, com todo conforto que apenas nós oferecemos.</P>
+                </span>
+                <article class="contact">
+                    <form action="">
+                        <input type="text" id="name" placeholder="Nome">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <input type="number" name="people" id="people" placeholder="Quantas Pessoas?">
+                        <input type="datetime-local" name="day" id="day">
+                        <input type="text" name="message" id="message" placeholder="Observações">
+                        <input type="submit" value="Reservar">
+                    </form>
+                </article>
+            </article>
+        </section>
     </main>
 
-
-    <footer></footer>
+    <footer>
+            <div class="social-fields">
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+            </div>
+            <div class="informations part1">
+                <a href="#">Info</a>
+                <a href="#">Suporte</a>
+                <a href="#">Marketing</a>
+            </div>
+            <div class="informations part2">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Politica de Privacidade</a>
+            </div>
+            <div class="line"></div>
+            <div class="informations copyright">
+                <p><a href="#">Sam's</a> Copyright © 2021.</p>
+            </div>
+    </footer>
 </body>
 
 </html>
