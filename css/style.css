@@ -1,14 +1,4 @@
-/*
-    Paleta de cores
-
-    #351715
-    #633f41
-    #b5b4b9
-    #263d1f
-    #16170f
-
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yanone+Kaffeesatz&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +7,7 @@
 
 body {
     background-color: rgb(248, 248, 248);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dosis', 'Yanone Kaffeesatz', sans-serif;
     font-size: 1.1rem;
     color: #16170f;
 }
@@ -66,7 +56,6 @@ section.content-main {
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
-    /* opacity: 0.9; */
 }
 
 .middle{
@@ -96,6 +85,7 @@ section.content-main {
 .logo-main {
     text-transform: uppercase;
     text-align: left;
+    font-weight: 600;
     font-size: 3rem;
     color: #16170f;
 }
@@ -118,7 +108,7 @@ section.content-main {
     background-color: #16170f;
     color: white;
     text-align: center;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 1.5rem;
     width: 30%;
     margin: 0px auto 80px auto;
@@ -160,7 +150,6 @@ article article.quote .margin-bottom {
 
 /*Entre Sobre e menu*/
 section.banner {
-    /* margin: 60px 0px; */
     height: 40vh;
     width: 100%;
     position: relative;
@@ -175,7 +164,6 @@ section.banner {
 /*MENU----------------------------------*/
 
 .container-menu {
-    /* border: 5px solid black; */
     box-shadow:10px 10px 50px 5px gray;  
     border-radius: 5px;
 }
@@ -187,7 +175,7 @@ section.banner {
     margin-bottom: 30px;
 }
 
-.menu {
+.menu, .menu-inv {
     display: inline-block;
     width: 70%;
     height: 100%;
@@ -197,10 +185,6 @@ section.banner {
 
 .menu-inv {
     float: right;
-    width: 70%;
-    height: 100%;
-    padding: 15px;
-    padding-right: 0;
 }
 
 .products-img-inv {
@@ -232,12 +216,14 @@ section.banner {
     font-size: 1.1rem;
     margin-bottom: 10px;
     width: 80%;
+    font-family:  'Josefin Sans', sans-serif;
 }
 
 .text-menu {
     margin-bottom: 15px;
     font-size: 0.9rem;
     width: 80%;
+    font-family:  'Josefin Sans', sans-serif;
 }
 
 .menu:first-child, .menu-inv:first-child {
@@ -248,9 +234,11 @@ section.banner {
     color: white;
     background-color: #16170f;
     padding: 5px;
+    float: right;
+    font-family:  'Josefin Sans', sans-serif;
 }
 
-/* WHERE */
+/* CONTACT */
 
 .contact {
     width: 100%;
@@ -330,12 +318,6 @@ footer .social-fields a {
 .part2 {
     margin-bottom: 15px;
 }
-/* 
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(32, 32, 32);
-} */
 
 .copyright {
     color: rgb(61, 61, 61);
@@ -348,4 +330,136 @@ footer .social-fields a {
 
 .copyright a:hover {
     color: rgb(216, 216, 216);
+}
+
+/*Responsividade*/
+@media screen and (max-width:1250px) {
+    .margin{
+        width: 80%;
+    }
+
+    .format {
+        background-color: rgb(248, 248, 248);
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .menu, .menu-inv{
+        margin: 0;
+        padding: 10px; 
+    }
+}
+
+@media screen and (max-width:920px) {
+    .text-about-container {
+        padding: 50px 10px 10px 10px;
+    }
+
+    .margin{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .text-menu {
+        width: 90%;
+    }
+
+    .sub-tittle {
+        margin: 0px auto 60px auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .margin {
+        width: 100%;
+    }
+
+    .container-menu {
+        box-shadow:0px 0px 50px 5px gray;  
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .left-bottom {
+        display: none;
+    }
+
+    .rigth-bottom {
+        display: none;
+    }
+
+    section.banner span {
+        width: 100%;
+    }
+
+    .products-img, .products-img-inv {
+        display: none;
+        float: none;
+    }
+
+    div.menu, div.menu-inv {
+        width: 100%;
+    }
+
+    .format {
+        height: 40vh;
+    }
+
+    .sub-tittle {
+        margin: 0px auto 40px auto;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    header {
+        position: relative;
+    }
+    
+    nav.nav-bar ul li{
+        float: none;
+    }
+    
+    nav.nav-bar ul li a{
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav.nav-bar ul li.right {
+        float: none;
+    }
+
+    .text-menu {
+        font-size: 0.9rem;
+    }
+
+    .preco, .menu-tittle {
+        font-size: 1rem;
+    }
+
+    .sub-tittle {
+        margin-bottom: 10px;
+    }
+
+    .banner span {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .text-about-container {
+        padding: 10px;
+    }
+
+    .menu, .menu-inv {
+        padding: 0px;
+    }
+
+    .menu-inv {
+        float: none;
+    }
+    
 }
